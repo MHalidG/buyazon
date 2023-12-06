@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -21,8 +22,8 @@ public class Satici {
     @Column(nullable=false)
     private Long vergiNo;
 
-
-    private String urunListesi;
+    @OneToMany(mappedBy = "satici")
+    private List<Urun> urunListesi;
 
 
 

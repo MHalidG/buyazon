@@ -19,8 +19,9 @@ public class UrunController {
 
 
     private UrunServis urunServis;
-
+/*
     @PostMapping
+    @RequestMapping("/kaydet")
     public ResponseEntity<StatusResponse> urunKaydet(@Valid @RequestBody UrunKayitIstegi urunKayitIstegi) {
 
       urunServis.urunKaydet(urunKayitIstegi);
@@ -31,16 +32,6 @@ public class UrunController {
 
       return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
-    /*
-    public ResponseEntity<> saveCar(@PathVariable  @Valid @RequestBody CarDTO carDTO) {
-        carService.saveCar(carDTO, imageId);
-
-        HRResponse response = new HRResponse();
-        response.setMessage("Car successfully saved");
-        response.setSuccess(true);
-
-        return new ResponseEntity<>(response, HttpStatus.CREATED);
 */
-
 
 }

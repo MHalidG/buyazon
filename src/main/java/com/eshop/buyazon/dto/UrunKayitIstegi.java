@@ -1,6 +1,7 @@
 package com.eshop.buyazon.dto;
 
 import com.eshop.buyazon.domain.ResimDosyasi;
+import com.eshop.buyazon.domain.Satici;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,9 +21,12 @@ public class UrunKayitIstegi {
 
     private Double fiyat;
 
-//    private Set<ResimDosyasi> resimler;
+ //   private Set<ResimDosyasi> resimler;
     private String resimler;
+
     private Long stokAdedi;
+
+    private Satici satici;
 
 
 }
