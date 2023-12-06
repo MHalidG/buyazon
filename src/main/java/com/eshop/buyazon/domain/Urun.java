@@ -1,24 +1,34 @@
 package com.eshop.buyazon.domain;
 
-import jakarta.persistence.Entity;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
+
+import javax.persistence.*;
 
 
 @Data
 @Entity
-@Builder(toBuilder = true)
+@AllArgsConstructor
+@NoArgsConstructor
 public class Urun {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Setter(AccessLevel.NONE)
     private Long id;
 
+    @Column(length=30,nullable =false)
     private String isim;
 
+    @Column(nullable =false)
     private String satici;
 
+    @Column(nullable =false)
     private Double fiyat;
 
-    private String resim;
+    private String resimler;
+
+    @Column(nullable =false)
+    private Long stokAdedi;
 
 
 }

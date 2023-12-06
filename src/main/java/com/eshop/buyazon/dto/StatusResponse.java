@@ -1,2 +1,16 @@
-package com.eshop.buyazon.dto;public class StatusResponse {
+package com.eshop.buyazon.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class StatusResponse {
+    boolean success;
+    String mesage;
+
 }

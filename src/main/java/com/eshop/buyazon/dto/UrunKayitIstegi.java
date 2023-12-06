@@ -1,7 +1,28 @@
-package com.eshop.buyazon.domain.dto;
+package com.eshop.buyazon.dto;
 
-public class urunKayitIstegi {
+import com.eshop.buyazon.domain.ResimDosyasi;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Set;
 
 
-    
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class UrunKayitIstegi {
+
+
+
+    private String isim;
+
+    private Double fiyat;
+
+//    private Set<ResimDosyasi> resimler;
+    private String resimler;
+    private Long stokAdedi;
+
+
 }
